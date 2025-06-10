@@ -50,3 +50,49 @@ body {
 ::-webkit-scrollbar-corner {
   background: rgba(0, 0, 0, 0.2);
 }
+
+.whatsapp-chat input[type="text"] {
+  color: black !important;
+}
+
+.styles-module_chatFooter__TGv0P form .styles-module_input__WFb9L {
+  border-radius: 20px;
+  padding: 0 10px;
+  border: none;
+  background-color: #fefefe;
+  min-height: 45px;
+  transition: box-shadow 0.2s ease-in-out;
+  color: #000;
+}
+
+.swiper-pagination {
+  width: 100px !important; /* Set width */
+  background: rgba(0, 0, 0, 0.6);
+  display: flex !important;
+  justify-content: center !important; /* Center dots */
+  padding: 3px;
+  border-radius: 20px; /* Optional rounded corners */
+
+  position: absolute !important;
+  left: 50% !important; /* Align center horizontally */
+  transform: translateX(-50%) !important; /* Adjust centering */
+  bottom: 20px !important; /* Position at bottom */
+}
+
+
+.swiper-pagination-bullet {
+  width: 4px !important;
+  height: 4px !important;
+  border-radius: 9999px;
+  background: white !important;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  width: 20px !important;
+  background: #fff;
+  opacity: 1;
+  border-radius: 8px !important;
+}
+

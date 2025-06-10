@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { GiShoppingCart } from "react-icons/gi";
 import { MdOutlineFavoriteBorder, MdSearch } from "react-icons/md";
 import CustomDrawer from "./Drawer/CustomDrawer";
@@ -9,6 +9,37 @@ export default function Options() {
 
   const toggleCartDrawer = () => setIsCartOpen((prev) => !prev);
   const toggleSearchPopup = () => setIsSearchOpen((prev) => !prev);
+  const searchPopupRef = useRef<HTMLDivElement | null>(null);
+
+  /**
+   * @param {KeyboardEvent} event
+   */
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        searchPopupRef.current &&
+        !searchPopupRef.current.contains(event.target as Node)
+      ) {
+        setIsSearchOpen(false);
+      }
+    };
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setIsSearchOpen(false);
+      }
+    };
+
+    if (isSearchOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+      document.addEventListener("keydown", handleKeyDown);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isSearchOpen]);
 
   return (
     <>
@@ -54,7 +85,10 @@ export default function Options() {
       {/* 🔍 Search Popup Modal */}
       {isSearchOpen && (
         <div className="fixed inset-0 z-50 bg-gray-800/30  flex justify-center items-start pt-24 px-4">
-          <div className="bg-white dark:bg-gray-900 w-full max-w-xl rounded-xl shadow-lg p-4">
+          <div
+            className="bg-white dark:bg-gray-900 w-full max-w-xl rounded-xl shadow-lg p-4"
+            ref={searchPopupRef}
+          >
             {/* Top: Search input UI */}
             <div className="flex items-center justify-between px-2">
               <div className="flex items-center flex-1">
