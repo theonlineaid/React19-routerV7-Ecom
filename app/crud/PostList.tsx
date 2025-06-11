@@ -16,7 +16,7 @@ const PostList: React.FC = () => {
 
   const fetchPosts = async () => {
     try {
-      const response = await fetch("http://localhost:3000/posts");
+      const response = await fetch("http://localhost:3000/products");
       if (!response.ok) throw new Error("Failed to fetch posts");
       const data: Post[] = await response.json();
       setPosts(data);
@@ -30,7 +30,7 @@ const PostList: React.FC = () => {
   const handleEditSubmit = async () => {
     if (!editingPost) return;
     try {
-      const res = await fetch(`http://localhost:3000/posts/${editingPost.id}`, {
+      const res = await fetch(`http://localhost:3000/products/${editingPost.id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

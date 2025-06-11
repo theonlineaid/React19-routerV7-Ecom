@@ -3,6 +3,10 @@ import { Welcome } from "../welcome/welcome";
 import Header from "~/componennts/Header";
 import WhatUpChat from "~/componennts/WhatUpChat";
 import EcommerceSlider from "~/componennts/EcommerceSlider";
+import BottomHeader from "~/componennts/BottomHeader";
+import ProductList from "~/componennts/ProductList";
+import CategoryList from "~/componennts/CategoryList";
+import Footer from "~/componennts/Footer";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -15,9 +19,13 @@ export default function Home() {
   return (
     <>
       <Header />
+      <BottomHeader />
       <EcommerceSlider />
-      <Welcome />
+      <CategoryList />
+      <ProductList/>
+      {/* <Welcome /> */}
       <WhatUpChat />
+      <Footer />
     </>
   );
 }

@@ -13,7 +13,7 @@ const slides = [
 
 const EcommerceSlider = () => {
   return (
-    <div className="relative w-full h-96">
+    <div className="container mx-auto p-6 relative w-full h-96">
       <Swiper
         modules={[Autoplay, Pagination, Navigation]}
         autoplay={{ delay: 3000, disableOnInteraction: false }}

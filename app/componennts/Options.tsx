@@ -73,7 +73,18 @@ export default function Options() {
           <span className="absolute -top-2 -right-3 bg-red-500 text-white text-xs font-medium px-1.5 py-0.5 rounded-full">
             5
           </span>
-          <CustomDrawer isOpen={isCartOpen} toggleDrawer={toggleCartDrawer} />
+          <CustomDrawer isOpen={isCartOpen} toggleDrawer={toggleCartDrawer} direction="right">
+            <div className="space-y-4">
+              <h2 className="text-lg font-semibold">Your Cart</h2>
+              <p>This is the cart drawer.</p>
+              <button
+                // onClick={toggleDrawer}
+                className="px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600"
+              >
+                Close
+              </button>
+            </div>
+          </CustomDrawer>
         </div>
 
         {/* Account */}

@@ -66,7 +66,7 @@ body {
 }
 
 .swiper-pagination {
-  width: 100px !important; /* Set width */
+  width: 60px !important; /* Set width */
   background: rgba(0, 0, 0, 0.6);
   display: flex !important;
   justify-content: center !important; /* Center dots */
@@ -81,8 +81,8 @@ body {
 
 
 .swiper-pagination-bullet {
-  width: 4px !important;
-  height: 4px !important;
+  width: 6px !important;
+  height: 6px !important;
   border-radius: 9999px;
   background: white !important;
   opacity: 0.6;

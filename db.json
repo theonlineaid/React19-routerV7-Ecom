@@ -1,39 +1,392 @@
 {
-  "posts": [
+  "products": [
     {
-      "id": "1",
-      "title": "a title",
-      "views": 100
+      "id": "p001",
+      "name": "Apple iPhone 15 Pro Max",
+      "description": "Latest Apple flagship smartphone with A17 Pro chip and 5x optical zoom.",
+      "price": 1299.99,
+      "category": "Smartphones",
+      "brand": "Apple",
+      "stock": 25,
+      "rating": 4.8,
+      "images": [
+        "https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
+      "reviews": [
+        {
+          "user": "john_doe",
+          "comment": "Amazing performance and battery life!",
+          "rating": 5,
+          "date": "2025-05-10"
+        },
+        {
+          "user": "susan_m",
+          "comment": "Too pricey, but worth it for the camera.",
+          "rating": 4.5,
+          "date": "2025-05-12"
+        }
+      ],
+      "createdAt": "2025-05-01T10:00:00Z"
     },
     {
-      "id": "2",
-      "title": "another title",
-      "views": 200
+      "id": "p002",
+      "name": "Samsung Galaxy S24 Ultra",
+      "description": "Premium Android phone with 200MP camera and Snapdragon Gen 3.",
+      "price": 1199.99,
+      "category": "Smartphones",
+      "brand": "Samsung",
+      "stock": 32,
+      "rating": 4.7,
+      "images": [
+        "https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
+      "reviews": [
+        {
+          "user": "techguru",
+          "comment": "Top-notch display and camera features!",
+          "rating": 4.9,
+          "date": "2025-05-08"
+        }
+      ],
+      "createdAt": "2025-05-02T09:30:00Z"
     },
     {
-      "id": "b477",
-      "title": "React js",
-      "views": 100
+      "id": "p003",
+      "name": "Sony WH-1000XM5 Wireless Headphones",
+      "description": "Industry-leading noise canceling with 30 hours battery life.",
+      "price": 399.99,
+      "category": "Audio",
+      "brand": "Sony",
+      "stock": 100,
+      "rating": 4.6,
+      "images": [
+        "https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg"
+      ],
+      "reviews": [
+        {
+          "user": "music_lover",
+          "comment": "Crystal clear sound and very comfy!",
+          "rating": 4.7,
+          "date": "2025-05-05"
+        }
+      ],
+      "createdAt": "2025-04-28T15:45:00Z"
     },
-    {
-      "id": "2c4d",
-      "title": "Node js",
-      "views": 80
+     {
+      "id": "p0044",
+      "name": "Sony WH-1000XM5 Wireless Headphones",
+      "description": "Industry-leading noise canceling with 30 hours battery life.",
+      "price": 399.99,
+      "category": "Audio",
+      "brand": "Sony",
+      "stock": 100,
+      "rating": 4.6,
+      "images": [
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHByb2R1Y3QlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D"
+      ],
+      "reviews": [
+        {
+          "user": "music_lover",
+          "comment": "Crystal clear sound and very comfy!",
+          "rating": 4.7,
+          "date": "2025-05-05"
+        }
+      ],
+      "createdAt": "2025-04-28T15:45:00Z"
+    },
+     {
+      "id": "p005",
+      "name": "Sony WH-1000XM5 Wireless Headphones",
+      "description": "Industry-leading noise canceling with 30 hours battery life.",
+      "price": 399.99,
+      "category": "Audio",
+      "brand": "Sony",
+      "stock": 100,
+      "rating": 4.6,
+      "images": [
+        "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
+      "reviews": [
+        {
+          "user": "music_lover",
+          "comment": "Crystal clear sound and very comfy!",
+          "rating": 4.7,
+          "date": "2025-05-05"
+        }
+      ],
+      "createdAt": "2025-04-28T15:45:00Z"
     }
-  ],
-  "comments": [
-    {
-      "id": "1",
-      "text": "a comment about post 1",
-      "postId": "1"
-    },
-    {
-      "id": "2",
-      "text": "another comment about post 1",
-      "postId": "1"
-    }
+
   ],
   "profile": {
-    "name": "typicode"
-  }
+    "storeName": "TechStore 360",
+    "owner": "typicode",
+    "location": "Dhaka, Bangladesh"
+  },
+  "categories": [
+    {
+      "id": "cat001",
+      "name": "Dorzone",
+      "description": "A premium category featuring high-quality Dorzone products.",
+      "image": "https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg",
+      "brand": {
+        "id": "brand001",
+        "name": "Dorzone Official",
+        "logo": "https://example.com/images/brands/dorzone-logo.png",
+        "website": "https://dorzone.example.com"
+      },
+      "created_at": "2025-06-11T12:00:00Z",
+      "updated_at": "2025-06-11T12:30:00Z",
+      "meta": {
+        "seo_title": "Dorzone Products - Premium Quality",
+        "seo_description": "Explore the exclusive range of Dorzone products in this category.",
+        "keywords": ["Dorzone", "premium products", "quality brand", "exclusive"]
+      },
+      "status": "active",
+      "priority": 1,
+      "tags": ["premium", "top-seller", "new-arrival"]
+    },
+    {
+      "id": "cat002",
+      "name": "TechGear",
+      "description": "Latest gadgets and tech accessories.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR2FKP_Wvmg9QjOpj19SjNhSL6TdnEjcTjUg&s",
+      "brand": {
+        "id": "brand002",
+        "name": "TechGear Co.",
+        "logo": "https://example.com/images/brands/techgear-logo.png",
+        "website": "https://techgear.example.com"
+      },
+      "created_at": "2025-05-20T08:00:00Z",
+      "updated_at": "2025-06-01T09:15:00Z",
+      "meta": {
+        "seo_title": "TechGear Gadgets and Accessories",
+        "seo_description": "Find cutting-edge technology gear and accessories here.",
+        "keywords": ["gadgets", "tech accessories", "electronics"]
+      },
+      "status": "active",
+      "priority": 2,
+      "tags": ["electronics", "gadgets", "latest"]
+    },
+    {
+      "id": "cat003",
+      "name": "Home Essentials",
+      "description": "Everything you need for your home and living space.",
+      "image": "https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg",
+      "brand": {
+        "id": "brand003",
+        "name": "HomeLife",
+        "logo": "https://example.com/images/brands/homelife-logo.png",
+        "website": "https://homelife.example.com"
+      },
+      "created_at": "2025-04-15T10:00:00Z",
+      "updated_at": "2025-06-05T11:45:00Z",
+      "meta": {
+        "seo_title": "Home Essentials - Furniture & More",
+        "seo_description": "Shop top-quality home essentials for a comfortable living.",
+        "keywords": ["home", "furniture", "living", "decor"]
+      },
+      "status": "active",
+      "priority": 3,
+      "tags": ["furniture", "decor", "living"]
+    },
+    {
+      "id": "cat004",
+      "name": "Fashion Forward",
+      "description": "Trendy and stylish clothing and accessories.",
+      "image": "https://5.imimg.com/data5/WH/XJ/FD/SELLER-56317023/home-applinces-all-type--500x500.png",
+      "brand": {
+        "id": "brand004",
+        "name": "StyleStreet",
+        "logo": "https://example.com/images/brands/stylestreet-logo.png",
+        "website": "https://stylestreet.example.com"
+      },
+      "created_at": "2025-03-22T14:30:00Z",
+      "updated_at": "2025-06-07T10:20:00Z",
+      "meta": {
+        "seo_title": "Fashion Forward - Latest Trends",
+        "seo_description": "Discover the latest trends in fashion and style.",
+        "keywords": ["fashion", "clothing", "style", "accessories"]
+      },
+      "status": "active",
+      "priority": 4,
+      "tags": ["fashion", "trendy", "clothing"]
+    },
+    {
+      "id": "cat005",
+      "name": "Fitness Zone",
+      "description": "Equipment and accessories for your fitness journey.",
+      "image": "https://example.com/images/categories/fitness-zone.jpg",
+      "brand": {
+        "id": "brand005",
+        "name": "FitLife",
+        "logo": "https://example.com/images/brands/fitlife-logo.png",
+        "website": "https://fitlife.example.com"
+      },
+      "created_at": "2025-05-10T09:00:00Z",
+      "updated_at": "2025-06-10T08:00:00Z",
+      "meta": {
+        "seo_title": "Fitness Zone - Workout Gear",
+        "seo_description": "Get the best workout equipment and accessories.",
+        "keywords": ["fitness", "workout", "health", "gym"]
+      },
+      "status": "active",
+      "priority": 5,
+      "tags": ["fitness", "gym", "workout"]
+    },
+    {
+      "id": "cat006",
+      "name": "Kids World",
+      "description": "Toys, clothes, and essentials for kids.",
+      "image": "https://example.com/images/categories/kids-world.jpg",
+      "brand": {
+        "id": "brand006",
+        "name": "KidzFun",
+        "logo": "https://example.com/images/brands/kidzfun-logo.png",
+        "website": "https://kidzfun.example.com"
+      },
+      "created_at": "2025-04-01T07:00:00Z",
+      "updated_at": "2025-06-08T14:15:00Z",
+      "meta": {
+        "seo_title": "Kids World - Toys & Clothes",
+        "seo_description": "Find the best toys and clothes for your kids.",
+        "keywords": ["kids", "toys", "clothes", "children"]
+      },
+      "status": "active",
+      "priority": 6,
+      "tags": ["kids", "toys", "clothes"]
+    },
+    {
+      "id": "cat007",
+      "name": "Outdoor Adventures",
+      "description": "Gear for camping, hiking, and outdoor activities.",
+      "image": "https://example.com/images/categories/outdoor-adventures.jpg",
+      "brand": {
+        "id": "brand007",
+        "name": "TrailBlaze",
+        "logo": "https://example.com/images/brands/trailblaze-logo.png",
+        "website": "https://trailblaze.example.com"
+      },
+      "created_at": "2025-03-05T15:30:00Z",
+      "updated_at": "2025-06-06T12:00:00Z",
+      "meta": {
+        "seo_title": "Outdoor Adventures - Camping Gear",
+        "seo_description": "Everything you need for your outdoor adventures.",
+        "keywords": ["outdoor", "camping", "hiking", "adventure"]
+      },
+      "status": "active",
+      "priority": 7,
+      "tags": ["outdoor", "camping", "hiking"]
+    },
+    {
+      "id": "cat008",
+      "name": "Beauty & Care",
+      "description": "Cosmetics, skincare, and beauty products.",
+      "image": "https://example.com/images/categories/beauty-care.jpg",
+      "brand": {
+        "id": "brand008",
+        "name": "GlowUp",
+        "logo": "https://example.com/images/brands/glowup-logo.png",
+        "website": "https://glowup.example.com"
+      },
+      "created_at": "2025-02-28T11:00:00Z",
+      "updated_at": "2025-06-04T16:30:00Z",
+      "meta": {
+        "seo_title": "Beauty & Care - Cosmetics & Skincare",
+        "seo_description": "Shop the best beauty and skincare products.",
+        "keywords": ["beauty", "cosmetics", "skincare", "care"]
+      },
+      "status": "active",
+      "priority": 8,
+      "tags": ["beauty", "skincare", "cosmetics"]
+    },
+    {
+      "id": "cat009",
+      "name": "Books & Stationery",
+      "description": "Books, notebooks, and office essentials.",
+      "image": "https://example.com/images/categories/books-stationery.jpg",
+      "brand": {
+        "id": "brand009",
+        "name": "PageTurner",
+        "logo": "https://example.com/images/brands/pageturner-logo.png",
+        "website": "https://pageturner.example.com"
+      },
+      "created_at": "2025-01-15T10:00:00Z",
+      "updated_at": "2025-06-02T09:45:00Z",
+      "meta": {
+        "seo_title": "Books & Stationery - Reading & Writing",
+        "seo_description": "Find the best books and stationery products.",
+        "keywords": ["books", "stationery", "notebooks", "reading"]
+      },
+      "status": "active",
+      "priority": 9,
+      "tags": ["books", "stationery", "reading"]
+    },
+    {
+      "id": "cat010",
+      "name": "Automotive",
+      "description": "Car accessories, tools, and parts.",
+      "image": "https://example.com/images/categories/automotive.jpg",
+      "brand": {
+        "id": "brand010",
+        "name": "AutoPlus",
+        "logo": "https://example.com/images/brands/autoplus-logo.png",
+        "website": "https://autoplus.example.com"
+      },
+      "created_at": "2025-04-20T13:00:00Z",
+      "updated_at": "2025-06-09T15:00:00Z",
+      "meta": {
+        "seo_title": "Automotive Accessories and Tools",
+        "seo_description": "Explore car accessories and automotive tools.",
+        "keywords": ["automotive", "car", "accessories", "tools"]
+      },
+      "status": "active",
+      "priority": 10,
+      "tags": ["automotive", "car", "tools"]
+    },
+    {
+      "id": "cat011",
+      "name": "Pet Supplies",
+      "description": "Food, toys, and care products for pets.",
+      "image": "https://example.com/images/categories/pet-supplies.jpg",
+      "brand": {
+        "id": "brand011",
+        "name": "PetCare",
+        "logo": "https://example.com/images/brands/petcare-logo.png",
+        "website": "https://petcare.example.com"
+      },
+      "created_at": "2025-03-12T08:45:00Z",
+      "updated_at": "2025-06-03T11:20:00Z",
+      "meta": {
+        "seo_title": "Pet Supplies - Food and Toys",
+        "seo_description": "Everything for your beloved pets.",
+        "keywords": ["pets", "food", "toys", "care"]
+      },
+      "status": "active",
+      "priority": 11,
+      "tags": ["pets", "food", "toys"]
+    },
+    {
+      "id": "cat012",
+      "name": "Gourmet Foods",
+      "description": "Delicious gourmet and specialty foods.",
+      "image": "https://example.com/images/categories/gourmet-foods.jpg",
+      "brand": {
+        "id": "brand012",
+        "name": "TasteBuds",
+        "logo": "https://example.com/images/brands/tastebuds-logo.png",
+        "website": "https://tastebuds.example.com"
+      },
+      "created_at": "2025-01-25T09:30:00Z",
+      "updated_at": "2025-06-01T14:10:00Z",
+      "meta": {
+        "seo_title": "Gourmet Foods - Specialty Delights",
+        "seo_description": "Explore a range of delicious gourmet foods.",
+        "keywords": ["gourmet", "specialty", "food", "delicious"]
+      },
+      "status": "active",
+      "priority": 12,
+      "tags": ["gourmet", "food", "specialty"]
+    }
+  ]
 }
