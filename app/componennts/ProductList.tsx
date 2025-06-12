@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { GiShoppingCart } from "react-icons/gi";
+import ProductListSkeleton from "./Skeleton/ProductListSkeleton";
 
 interface Review {
   user: string;
@@ -40,7 +41,7 @@ const ProductList: React.FC = () => {
     fetchProducts();
   }, []);
 
-  if (loading) return <div className="p-6 text-gray-500">Loading...</div>;
+  if (loading) return <ProductListSkeleton />;
   if (error) return <div className="p-6 text-red-500">Error: {error}</div>;
 
   return (
@@ -92,12 +93,6 @@ const ProductList: React.FC = () => {
 
               {/* Buttons */}
               <div className="mt-auto flex gap-3">
-                {/* <button
-                  onClick={() => alert(`Quick view of ${product.name}`)}
-                  className="flex-1 border border-pink-600 text-pink-600 hover:bg-pink-600 hover:text-white transition rounded-lg py-2 font-semibold"
-                >
-                  Quick View
-                </button> */}
                 <button
                   onClick={() => alert(`Added ${product.name} to cart`)}
                   className="flex-1 bg-pink-600 text-white rounded-lg py-2 flex items-center justify-center gap-2 hover:bg-pink-700 transition font-semibold"

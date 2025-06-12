@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import CategoryListSkeleton from "./Skeleton/CategoryListSkeleton";
 
 interface Category {
   id: string;
@@ -28,7 +29,7 @@ const CategoryList: React.FC = () => {
     fetchCategories();
   }, []);
 
-  if (loading) return <div className="p-6 text-gray-500">Loading...</div>;
+  if (loading) return <CategoryListSkeleton />;
   if (error) return <div className="p-6 text-red-500">Error: {error}</div>;
 
   return (

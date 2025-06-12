@@ -127,24 +127,24 @@ const Footer: React.FC = () => {
           <p className="text-sm text-gray-400 mb-3">
             Subscribe to get updates, promotions and more.
           </p>
-<form className="flex items-center w-full">
-  <input
-    type="email"
-    placeholder="Enter your email"
-    className="w-full px-3 py-2 rounded-l-lg text-sm 
-               border border-gray-300 
-               text-black placeholder-black 
-               dark:text-white dark:placeholder-white 
-               dark:border-gray-600
-               focus:border-pink-600 focus:ring-1 focus:ring-pink-500 focus:outline-none"
-  />
-  <button
-    type="submit"
-    className="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-r-lg text-sm"
-  >
-    Subscribe
-  </button>
-</form>
+          <form className="flex items-center w-full">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="w-full px-3 py-2 rounded-l-lg text-sm 
+                        border border-gray-300 
+                        text-black placeholder-black 
+                        dark:text-white dark:placeholder-white 
+                        dark:border-gray-600
+                        focus:border-pink-600 focus:ring-1 focus:ring-pink-500 focus:outline-none"
+            />
+            <button
+              type="submit"
+              className="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-r-lg text-sm"
+            >
+              Subscribe
+            </button>
+          </form>
 
           <div className="flex space-x-4 mt-4">
             <a href="#" className="text-gray-400 hover:text-white">

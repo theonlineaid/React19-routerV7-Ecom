@@ -18,14 +18,11 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <>
-      <Header />
-      <BottomHeader />
+      
       <EcommerceSlider />
       <CategoryList />
       <ProductList/>
-      {/* <Welcome /> */}
-      <WhatUpChat />
-      <Footer />
+      
     </>
   );
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
@@ -12,6 +12,29 @@ const slides = [
 ];
 
 const EcommerceSlider = () => {
+  const [loading, setLoading] = useState(true);
+
+  // Simulate loading delay (or replace with real image loading logic)
+  useEffect(() => {
+    const timeout = setTimeout(() => setLoading(false), 2000);
+    return () => clearTimeout(timeout);
+  }, []);
+
+  if (loading) {
+    // Skeleton Loader
+    return (
+      <div className="container mx-auto p-6 relative w-full h-96 flex space-x-4 overflow-hidden">
+        {[1].map((_, idx) => (
+          <div
+            key={idx}
+            className="w-full h-full max-w-full rounded-2xl bg-gray-300 dark:bg-gray-700 animate-pulse"
+          />
+        ))}
+      </div>
+    );
+  }
+
+  // Actual Slider
   return (
     <div className="container mx-auto p-6 relative w-full h-96">
       <Swiper
@@ -41,13 +64,8 @@ const EcommerceSlider = () => {
         {/* Custom Prev Arrow */}
         <div className="custom-prev absolute left-4 top-1/2 -translate-y-1/2 z-10">
           <div className="relative group w-[20px] h-[60px] rounded-sm overflow-hidden cursor-pointer">
-            {/* Gradient border on hover */}
             <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-br from-pink-500 to-purple-500" />
-
-            {/* Blur black overlay (always visible) */}
             <div className="absolute inset-0 z-10 bg-black/50 backdrop-blur-sm rounded-md" />
-
-            {/* Arrow icon */}
             <div className="relative z-20 flex items-center justify-center w-full h-full">
               <svg
                 className="w-[24px] h-[24px] text-white"
@@ -56,11 +74,7 @@ const EcommerceSlider = () => {
                 strokeWidth={2}
                 viewBox="0 0 24 24"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M15 19l-7-7 7-7"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
               </svg>
             </div>
           </div>
@@ -69,13 +83,8 @@ const EcommerceSlider = () => {
         {/* Custom Next Arrow */}
         <div className="custom-next absolute right-4 top-1/2 -translate-y-1/2 z-10">
           <div className="relative group w-[20px] h-[60px] rounded-sm overflow-hidden cursor-pointer">
-            {/* Gradient border on hover */}
             <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-br from-pink-500 to-purple-500" />
-
-            {/* Blur black overlay (always visible) */}
             <div className="absolute inset-0 z-10 bg-black/50 backdrop-blur-sm rounded-md" />
-
-            {/* Arrow icon */}
             <div className="relative z-20 flex items-center justify-center w-full h-full">
               <svg
                 className="w-[24px] h-[24px] text-white"
@@ -84,11 +93,7 @@ const EcommerceSlider = () => {
                 strokeWidth={2}
                 viewBox="0 0 24 24"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M9 5l7 7-7 7"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
               </svg>
             </div>
           </div>
