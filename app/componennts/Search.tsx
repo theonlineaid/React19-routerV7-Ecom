@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { MdSearch } from "react-icons/md";
+import { MdSearch, MdKeyboardArrowDown  } from "react-icons/md";
 
 const categories = [
   "Electronics by something",
@@ -72,19 +72,19 @@ export default function Search() {
 
       const text = selectedCategory || "All";
       const textWidth = ctx.measureText(text).width;
-      setSelectWidth(textWidth + 48);
+      setSelectWidth(textWidth + 38);
     }
   }, [selectedCategory]);
 
   return (
     <div className="relative w-full max-w-3xl mx-6">
       <div className="flex items-center border dark:border-gray-700 rounded-full overflow-hidden focus-within:ring-2 focus-within:ring-blue-500">
-        <select
+        {/* <select
           ref={selectRef}
           value={selectedCategory}
           onChange={(e) => setSelectedCategory(e.target.value)}
           style={{
-            width: `${selectWidth + 5}px`,
+           width: `${selectWidth + 5+ 5}px`,
             transition: "width 0.2s ease-in-out",
             height: "40px",
           }}
@@ -96,7 +96,36 @@ export default function Search() {
               {cat}
             </option>
           ))}
-        </select>
+        </select> */}
+
+        <div className="relative" style={{ width: `${selectWidth + 15}px` }}>
+          <select
+            ref={selectRef}
+            value={selectedCategory}
+            onChange={(e) => setSelectedCategory(e.target.value)}
+            style={{
+              width: `${selectWidth + 15}px`,
+              // transition: "0.2s ease-in-out",
+              height: "40px",
+              appearance: "none", // Hide default arrow
+              WebkitAppearance: "none",
+              MozAppearance: "none",
+              borderTopRightRadius: 0,
+              borderBottomRightRadius: 0,
+            }}
+            className="px-4 py-2 pr-8 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white border-0 focus:outline-none rounded-md"
+          >
+            <option value="">All Category</option>
+            {categories.map((cat) => (
+              <option key={cat} value={cat}>
+                {cat}
+              </option>
+            ))}
+          </select>
+
+          {/* Custom Icon */}
+          <MdKeyboardArrowDown className="absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500 dark:text-gray-400" />
+        </div>
 
         {/* Search Input with icon */}
         <div className="relative flex-1">
